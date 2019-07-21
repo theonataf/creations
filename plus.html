@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>plus button</title>
+    <link rel="stylesheet" type="text/css" href="plus.css">
+</head>
+
+<body>
+    <span id="plus-btn" class="plus-btn">+</span>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $('#plus-btn').mousedown(() => {
+            $('#plus-btn').removeClass('plus-btn')
+            $('#plus-btn').addClass('clicked-btn')
+        })
+        $('#plus-btn').mouseup(() => {
+            $('#plus-btn').removeClass('clicked-btn')
+            $('#plus-btn').addClass('plus-btn')
+        })
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,19 @@
+.plus-btn {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+    font-size: 40px;
+    color: #0099ff;
+    text-shadow: -3px 2px 12px grey;
+    box-sizing: content-box;
+}
+
+.clicked-btn {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+    font-size: 41px;
+    color: #0099ff;
+}
