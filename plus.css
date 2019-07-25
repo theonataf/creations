@@ -17,3 +17,26 @@
     font-size: 41px;
     color: #0099ff;
 }
+
+.released {
+	color:grey;
+	font:bolder;
+	font-size: 25px;
+	cursor: pointer;
+	text-shadow: 0px 4px 9px grey;
+}
+
+.clicked {
+	color:grey;
+	font:bolder;
+	font-size: 26px !important;
+	cursor: pointer;
+}
+
+.turn {
+	-webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+	display: inline-block;
+	transform: rotate(45deg);
+}

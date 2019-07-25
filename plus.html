@@ -9,6 +9,11 @@
 <body>
     <span id="plus-btn" class="plus-btn">+</span>
 
+    <br>
+<br>
+	<div class='turn'>
+	    <span class="mr-2 remove-product released" pk="3">+</span>
+	</div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script>
         $('#plus-btn').mousedown(() => {
@@ -18,6 +23,19 @@
         $('#plus-btn').mouseup(() => {
             $('#plus-btn').removeClass('clicked-btn')
             $('#plus-btn').addClass('plus-btn')
+        })
+
+        $('.remove-product').mousedown((e) => {
+        	const product_id = $(e.target).attr('pk');
+        	console.log(product_id)
+        	$(e.target).removeClass('released');
+        	$(e.target).addClass('clicked');
+        })
+
+        $('remove-product').mouseup((e) => {
+    		$(e.target).removeClass('clicked');
+    		$(e.target).addClass('released');
+    		console.log('rel')
         })
     </script>
 </body>
